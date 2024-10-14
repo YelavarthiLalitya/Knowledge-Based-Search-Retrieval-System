@@ -4,7 +4,7 @@
 This project is a **Knowledge-Based Search and Retrieval System** that allows users to upload PDF and TXT documents, search for specific terms, and explore document content. Built using **Flask** and **Hugging Face Transformers**, it processes documents to make them searchable and interactive.
 
 ## Features
-- **Document Upload**: Users can upload PDF and TXT files.
+- **Document Upload**: Users can upload PDF files.
 - **Search Functionality**: Allows users to search for terms in uploaded documents and returns the relevant pages.
 
 ## Setup Instructions
@@ -12,8 +12,8 @@ This project is a **Knowledge-Based Search and Retrieval System** that allows us
 ### 1. Clone the Repository
 First, clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/YelavarthiLalitya/Knowledge-Based-Search-Retrieval-System.git
+cd Knowledge-Based-Search-Retrieval-System
 ```
 
 ### 2. Create a Virtual Environment
