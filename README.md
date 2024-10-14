@@ -1,7 +1,7 @@
 # Knowledge-Based Search and Retrieval System
 
 ## Project Description
-This project is a **Knowledge-Based Search and Retrieval System** that allows users to upload PDF and TXT documents, search for specific terms, and explore document content. Built using **Flask** and **Hugging Face Transformers**, it processes documents to make them searchable and interactive.
+This project is a **Knowledge-Based Search and Retrieval System** that allows users to upload PDF documents, search for specific terms, and explore document content. Built using **Flask** and **Hugging Face Transformers**, it processes documents to make them searchable and interactive.
 
 ## Features
 - **Document Upload**: Users can upload PDF files.
