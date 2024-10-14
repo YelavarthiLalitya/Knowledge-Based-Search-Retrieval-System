@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+python-dotenv
+
+
+
+venv\Scripts\activate      # On Windows
+python app.py
+
+

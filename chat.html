@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Chat with Document</h1>
+
+    <!-- Chat input form -->
+    <form method="POST" action="{{ url_for('chat') }}">
+        <label for="message">Type your message:</label><br>
+        <input type="text" id="message" name="message" placeholder="Ask a question..." required>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Display chat history below the form -->
+    <div class="chat-history">
+        <h2>Chat History</h2>
+        <ul>
+            {% for user_message, bot_response in chat_history %}
+                <li><strong>You:</strong> {{ user_message }}</li>
+                <li><strong>Bot:</strong> {{ bot_response }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

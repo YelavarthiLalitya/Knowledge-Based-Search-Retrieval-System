@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Successful</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Upload Successful!</h1>
+    <p>You have uploaded: <strong>{{ report_name }}</strong></p>
+    <a class="button" href="{{ url_for('upload') }}">Upload Another Document</a>
+    <a class="button" href="{{ url_for('search') }}">Search Documents</a>
+    <a class="button" href="{{ url_for('chat') }}">Chat</a>
+    <a class="button" href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Search Results for "{{ query }}"</h1>
+
+    {% if results %}
+        <ul>
+            {% for doc_name, pages in results.items() %}
+                <li>{{ doc_name }}:
+                    <ul>
+                        {% for page, count in pages.items() %}
+                            <li>Page {{ page }}: {{ count }} occurrence(s)</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found for your query.</p>
+    {% endif %}
+
+    <a class="button" href="{{ url_for('search') }}">New Search</a>
+    <a class="button" href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

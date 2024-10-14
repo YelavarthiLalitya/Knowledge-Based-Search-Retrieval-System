@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Upload Document</h1>
+    <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+        <label for="report_name">Report Name:</label>
+        <input type="text" id="report_name" name="report_name" required>
+        
+        <label for="additional_notes">Additional Notes:</label>
+        <input type="text" id="additional_notes" name="additional_notes">
+
+        <label for="document_file">Choose a PDF file to upload:</label>
+        <input type="file" id="document_file" name="document_file" accept=".pdf,.txt" required>
+        <br><br>
+
+        <label for="document_type">Document Type:</label>
+        <select id="document_type" name="document_type" required>
+            <option value="Legal">Legal</option>
+            <option value="Medical">Medical</option>
+            <option value="Education">Education</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <input type="submit" value="Upload">
+    </form>
+    <a class="button" href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
+
