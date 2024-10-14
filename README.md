@@ -6,6 +6,8 @@ This project is a **Knowledge-Based Search and Retrieval System** that allows us
 ## Features
 - **Document Upload**: Users can upload PDF files.
 - **Search Functionality**: Allows users to search for terms in uploaded documents and returns the relevant pages.
+- - **Chat Functionality**: Users can interact with the system through a chat interface, asking questions about the content of the uploaded documents, which are processed using a language model for responses.
+
 
 ## Setup Instructions
 
